@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "2M1-SP1-T1-B1-M2QE")(type "Legacy")(uri "${KIPRJMOD}/library/2M1-SP1-T1-B1-M2QE/2M1-SP1-T1-B1-M2QE.lib")(options "")(descr ""))
+)
