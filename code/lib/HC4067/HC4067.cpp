@@ -27,6 +27,11 @@ void HC4067::begin(uint8_t en, int8_t sig, int8_t input_s0, int8_t input_s1, int
   pinMode(enable_pin, OUTPUT);
   pinMode(sig_pin, INPUT);
 
+  pinMode(input_s0, OUTPUT);
+  pinMode(input_s1, OUTPUT);
+  pinMode(input_s2, OUTPUT);
+  pinMode(input_s3, OUTPUT);
+
   s0 = input_s0;
   s1 = input_s1;
   s2 = input_s2;
@@ -35,12 +40,12 @@ void HC4067::begin(uint8_t en, int8_t sig, int8_t input_s0, int8_t input_s1, int
 
 void HC4067::enable()
 {
-  digitalWrite(enable_pin, HIGH);
+  digitalWrite(enable_pin, LOW);
 }
 
 void HC4067::disable()
 {
-  digitalWrite(enable_pin, LOW);
+  digitalWrite(enable_pin, HIGH);
 }
 
 int16_t HC4067::read(int8_t channel_pin)
