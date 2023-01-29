@@ -8,3 +8,9 @@ A list of components can be found [here](https://docs.google.com/spreadsheets/d/
 
 ## Preview
 ![](/images/preview-v1.png)
+
+## Rev2
+
+- [] Connect switches to 3.3 V instead of ground.
+- [] Create multiple boards to compensate for hight difference of pots and switches
+- [] Use toggle switches that are on / of
